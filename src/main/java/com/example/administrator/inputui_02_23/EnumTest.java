@@ -72,7 +72,19 @@ private static void fun(){
         }
 
 //        System.arraycopy();
-
+    X i =new X();
+        System.out.println(i.i);
+        int m=1;
+       int m1=m>>>4;
+        int m3 = 15;
+        int m2 = m3>>2;
+        System.out.println(m1+"\n"+m2);
+        int kk=0b10000000000000000000000000001111;
+      String  kk1=Integer.toBinaryString(2147483646);
+        System.out.println(kk1);
+        /*int l =-1;
+        int l1 = l>>2;
+        System.out.println(l1);*/
     }
     class InnerEnum{
         private void fun(){
@@ -82,10 +94,15 @@ private static void fun(){
     }
 }
 class Outer{
-    private void fun1(){
+     int i=1;
+     void fun1(){
 
     }
 }
-/*class x extends StringBuilder{
+class X extends Outer{
 
-}*/
+    @Override
+    void fun1() {
+        super.fun1();
+    }
+}
