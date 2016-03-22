@@ -32,7 +32,7 @@ private static void fun(){
 //        EnumTest.fun();
 //        System.out.println(EnumTest.class);
 //        System.out.println(Enum.C1.getClass());
-        EnumTest a = new EnumTest();
+        /*EnumTest a = new EnumTest();
         EnumTest b = new EnumTest();
         if(a.equals(b)){
             System.out.println("true");
@@ -82,9 +82,17 @@ private static void fun(){
         int kk=0b10000000000000000000000000001111;
       String  kk1=Integer.toBinaryString(2147483646);
         System.out.println(kk1);
-        /*int l =-1;
+        *//*int l =-1;
         int l1 = l>>2;
         System.out.println(l1);*/
+
+        int a = 'a';
+        int b = 'b';
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.print("a="+a+" b="+b);
+
     }
     class InnerEnum{
         private void fun(){
