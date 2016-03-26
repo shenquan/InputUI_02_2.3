@@ -1,5 +1,8 @@
 package com.example.administrator.inputui_02_23;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Administrator on 2016/3/22.
  */
@@ -35,6 +38,7 @@ public class BubbleSort {
         for(int i:a){
             System.out.print(i+" ");
         }
+        Map<String,String> t = new HashMap<>();
 
     }
 
