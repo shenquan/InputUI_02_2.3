@@ -21,5 +21,8 @@ class Jicheng extends Duotai{
 
         Duotai duotai1 = new Duotai();
         duotai1.A();
+
+        char a='A';
+        System.out.println(Character.SIZE);
     }
 }
