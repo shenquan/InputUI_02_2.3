@@ -7,11 +7,30 @@ public class MainSelectSort {
 
     public static void selectSort(int arr[]){
 
-        for(int)
+        int len = arr.length;
+        for(int i=0;i<len;i++){
+            //记录最小值
+            int min=arr[i];
+            //记录最小的位置
+            int k=i;
+            for(int j=i+1;j<len;j++){
+                if(min>arr[j]){
+                    min =arr[j];
+                    k=j;
+                }
+            }
+            if(min<arr[i]){
+                //swap i and k
+                arr[i] = arr[i]+arr[k];
+                arr[k]=arr[i]-arr[k];
+                arr[i]=arr[i]-arr[k];
+            }
+
+        }
 
     }
     public static void main(String[] args) {
-        int a[]={5,4,9,8,7,6,0,1,3,2,};
+        int a[]={5,4,9,8,7,6,0,1,3,2,100,9};
         int len=a.length;
         selectSort(a);
         for(int i=0;i<len;i++){
