@@ -8,22 +8,20 @@ public class MainInsertSort {
     public static void insertSort(int arr[]){
 
         int len = arr.length;
-        for(int i=1;i<len;i++){
-            int arri=arr[i];
-            boolean flag=false;
-            int k=0;
-            for(int j=i-1;j>=0;j--) {
-                if (arri<arr[j]){
-                 arr[j+1]=arr[j];
-                    flag=true;
-                    k=j;
+        for(int i=1;i<len;i++) {
+            int arri = arr[i];
+            //k记录保存最后放入新插入值的位置
+            int k = i;
+            if (arri < arr[i - 1]) {
+                for (int j = i - 1; j >= 0; j--) {
+                    if (arri < arr[j]) {
+                        arr[j + 1] = arr[j];
+                        k = j;
+                    }
                 }
-            }
-            if(flag){
-                arr[k]=arri;
+                arr[k] = arri;
             }
         }
-
     }
 
 
