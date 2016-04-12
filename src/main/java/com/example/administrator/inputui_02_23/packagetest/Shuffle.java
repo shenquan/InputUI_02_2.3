@@ -1,4 +1,4 @@
-package com.example.administrator.inputui_02_23;
+package com.example.administrator.inputui_02_23.packagetest;
 
 import java.util.ArrayList;
 import java.util.Collections;

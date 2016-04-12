@@ -1,5 +1,7 @@
 package com.example.administrator.inputui_02_23;
 
+import com.example.administrator.inputui_02_23.packagetest.Shuffle;
+
 import java.lang.ref.*;
 
 
@@ -8,6 +10,7 @@ import java.lang.ref.*;
  */
 public class PhantomReferenceTest {
     public static void main(String[] args) {
+        Shuffle.shuffle();
         // 创建一个对象
         String str = new String("JAVA讲义");
 //  创建一个引用队列
