@@ -11,9 +11,12 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
 //        startActivity();
-        Handler n = new Handler();
+//        Handler n = new Handler();
+        setContentView(R.layout.radio_group_test);
+
+
     }
 
     @Override

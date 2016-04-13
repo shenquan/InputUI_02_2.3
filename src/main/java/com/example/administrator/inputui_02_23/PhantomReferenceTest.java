@@ -2,7 +2,8 @@ package com.example.administrator.inputui_02_23;
 
 import com.example.administrator.inputui_02_23.packagetest.Shuffle;
 
-import java.lang.ref.*;
+import java.lang.ref.PhantomReference;
+import java.lang.ref.ReferenceQueue;
 
 
 /**
@@ -16,7 +17,7 @@ public class PhantomReferenceTest {
 //  创建一个引用队列
         ReferenceQueue<String> rq = new ReferenceQueue<String>();
         //创建一个虚引用，指定引用对象.不能单独使用必须关联引用队列
-        PhantomReference pr = new java.lang.ref.PhantomReference(str,rq);
+        PhantomReference pr = new java.lang.ref.PhantomReference(str, rq);
         //切断强引用
         str = null;
         //试图取得虚引用对象
